@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tokenizer for Conekta </title>
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+</head>
+
+<body>
+  <div class='card-wrapper' style="margin-top: 20px"></div>
+  <div class="columns is-centered">
+    <div class="column is-3">
+      <div class="card" style="margin-top: 20px">
+        <header class="card-header">
+          <p class="card-header-title">
+            Cardholder
+          </p>
+        </header>
+        <div class="card-content">
+          <form>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="name" placeholder="Full Name">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="number" placeholder="0000 0000 0000 0000">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-half">
+                <input class="input" type="text" name="expiry" placeholder="00 / 00">
+              </div>
+              <div class="column is-half">
+                <input class="input" type="text" name="cvc" placeholder="CVC">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px">
+        <header class="card-header">
+          <p class="card-header-title">
+            Address
+          </p>
+        </header>
+        <div class="card-content">
+          <form>
+            <div class="columns">
+              <div class="column is-8">
+                <input class="input" type="text" name="street1" placeholder="Chespirito">
+              </div>
+              <div class="column is-4">
+                <input class="input" type="text" name="street2" placeholder="#264 A">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="city" placeholder="Juarez City">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="state" placeholder="Chihuahua">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="country" placeholder="México">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="zip" placeholder="Zip code">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px">
+        <header class="card-header">
+          <p class="card-header-title">
+            Conekta
+          </p>
+        </header>
+        <div class="card-content">
+          <form>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="public_key" placeholder="Public key">
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full">
+                <input class="input" type="text" name="token_id" placeholder="Token id">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="is-centered" style="margin-top: 10px;">
+        <button class="button is-primary is-centered" onclick="submit()">Generate</button>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/card/dist/card.js"></script>
+  <script src="node_modules/conekta-card-tokenizer/dist/conekta.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

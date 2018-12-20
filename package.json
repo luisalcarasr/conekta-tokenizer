@@ -1,0 +1,27 @@
+{
+  "name": "conekta-tokenizer",
+  "version": "1.0.0",
+  "description": "Tokenizer for Conekta",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisalcarasr/conekta-tokenizer.git"
+  },
+  "keywords": [
+    "conekta"
+  ],
+  "author": "Luis Alcaras",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/luisalcarasr/conekta-tokenizer/issues"
+  },
+  "homepage": "https://github.com/luisalcarasr/conekta-tokenizer#readme",
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "card": "^2.4.0",
+    "conekta-card-tokenizer": "^1.0.1"
+  }
+}
